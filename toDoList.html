@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="src/index.js"></script>
+    <!-- <link rel="stylesheet" href="/css/common.css"> --> 
+    <style>
+        *{
+            /* margin: 0;
+            padding: 0; */
+            box-sizing: border-box;
+        }
+
+        body{
+            background-image: linear-gradient(180deg, #487eb0, #ffffff);
+            min-height: 100vh;
+        }
+
+        .container{
+            max-width: 600px;
+            margin: auto;
+            /* padding: 20px; */
+        }
+
+        .inputData{
+            width: 70%;
+            border: none;
+            border-bottom: 2px solid #000;
+            background: none;
+            outline: none;
+            font-size: 18px;
+            margin-top: 5%;
+            padding: 0.5%;
+        }
+
+        h3{
+            margin: 30px 0;
+        }
+        .task{
+            width:100%;
+            background: rgba(255,255,255,0.5);
+            padding: 18px;
+            margin: 6px 0;
+            overflow: hidden;
+            border-radius: 3px;
+        }
+        .task i{
+            float: right;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .done .task{
+            background: rgba(0,0,0,0.5);
+            color : #fff;
+        }
+
+        #test {
+            background-color: blue;
+        }
+        /* .area2 {
+            width: 250px;
+        } */
+        .area1 {
+            /* display: flex; */
+            justify-content: space-between;
+        }
+
+        .area2 ul li {
+            /* background-color: #fff; */
+            display: flex;
+            justify-content: space-between;
+
+            max-width: 650px;
+            margin: auto;
+            /* padding: 20px; */
+        }
+        .test1 {
+            display: inline-block;
+        }
+        .test2 {
+            display: inline-block;
+        }
+        .completbtn {
+            display: none;
+        }
+
+        .area2 ul li.modify .modifyBtn {display: none;}
+        .area2 ul li.modify .completbtn {display: inline-block;}
+        .area2 ul li.modify {}
+
+    </style>
+</head>
+<body>
+    <section>
+        <article class="area1">
+            <div class="container">
+                <input type="text" placeholder="To Do List" class ="inputData">
+                <button class="addBtn">추가</button>
+            </div>
+        </article>
+
+        <article class="area2">
+            <ul>
+                <li>
+                    <span class="text">블로그1</span>
+                    <div>
+                        <button class="delBtn">삭제</button>
+                        <button class="modifyBtn">수정</button>
+                        <button class="completbtn">완료</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="text">블로그2</span>
+                    <div>
+                        <button class="delBtn">삭제</button>
+                        <button class="modifyBtn">수정</button>
+                        <button class="completbtn">완료</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="text">블로그3</span>
+                    <div>
+                        <button class="delBtn">삭제</button>
+                        <button class="modifyBtn">수정</button>
+                        <button class="completbtn">완료</button>
+                    </div>
+                </li>
+            </ul>
+        </article>
+    </section>
+    <!-- <footer>
+        푸터
+    </footer> -->
+
+</body>
+</html>
